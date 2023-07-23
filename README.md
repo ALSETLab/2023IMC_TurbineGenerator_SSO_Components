@@ -1,2 +1,9 @@
-# 2023IMC_TurbineGenerator_SSO_Components
- Modelica models presented in "Modeling Components of a Turbine-Generator System for Sub-Synchronous Oscillation Studies with Modelica" for the 15th International Modelica Conference for the paper "Coalesced Gas Turbine and Power System Modeling and Simulation using Modelica" by E. Segerstrom, L. Vanfretti, et al.
+# Multi-Domain Turbine-Generator Component Models for Sub-Synchronous Oscillation Studies in Modelica
+ This repository contains Modelica models presented at the 15th International Modelica Conference for the following paper:
+
+ > Eric Segerstrom, Luigi Vanfretti, Chetan Mishra and Kevin D. Jones, "Modeling Components of a Turbine-Generator System for Sub-Synchronous Oscillation Studies with Modelica", Proceedings of the 15th International Modelica Conference, Aachen, Germany, Oct. 9-11, 2023.
+
+ These models include a scalable torsional shaft model (SHAF25), a round-rotor generator model with a DC offset torque component (GENDCO), and a Single Machine Infinite Bus (SMIB) test system to perform preliminary evaluation of these models. Modified versions of these models are also included for linear analysis. 
+ 
+# Dependencies
+  The models presented in this repostiory are dependent on the [OpenIPSL Library v3.0.0](https://github.com/OpenIPSL/OpenIPSL/releases/tag/v3.0.0).
