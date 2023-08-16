@@ -1,6 +1,6 @@
 within TurbineGeneratorSSO.Components.Machines;
 model GENSAL_multidomain
-  "SALIENT POLE GENERATOR MODEL (QUADRATIC SATURATION ON D-AXIS)"
+  "MULTIDOMAIN SALIENT POLE GENERATOR MODEL (QUADRATIC SATURATION ON D-AXIS)"
   extends OpenIPSL.Icons.VerifiedModel;
   // Import of Dependencies
   import OpenIPSL.NonElectrical.Functions.SE;

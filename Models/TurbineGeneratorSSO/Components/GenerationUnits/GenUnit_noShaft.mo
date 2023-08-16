@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.Components.GenerationUnits;
-model GenUnit_noShaft
+model GenUnit_noShaft "Multidomain Turbine-Generator Unit Omitting Torsional Shaft Model"
   inner OpenIPSL.Electrical.SystemBase SysData(S_b=960000000, fn=30);
   Machines.GENROU_multidomain generator(
     P_0=39999950,
@@ -89,7 +89,7 @@ equation
           -3},{86,-30},{79,-30}}, color={0,0,127}));
   connect(generator.EFD0, exciter.EFD0) annotation (Line(points={{81,-5},{84,-5},
           {84,-34},{79,-34}}, color={0,0,127}));
-  connect(torque.flange, generator.flange_b)
+  connect(torque.flange, generator.torque)
     annotation (Line(points={{10,0},{60,0}}, color={0,0,0}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
         coordinateSystem(preserveAspectRatio=false)),

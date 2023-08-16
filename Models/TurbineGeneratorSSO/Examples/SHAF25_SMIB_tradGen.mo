@@ -1,6 +1,6 @@
 within TurbineGeneratorSSO.Examples;
 model SHAF25_SMIB_tradGen
-  "SMIB - Single Machine Infinite Base system with one load."
+  "Single Machine Infinite Base system with one load to test traditional single-domain generation units."
   extends Modelica.Icons.Example;
   OpenIPSL.Electrical.Branches.PwLine pwLine(
     R=0.001,

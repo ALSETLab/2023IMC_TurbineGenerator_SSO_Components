@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.Components.GenerationUnits;
-model GenUnit_GENDCO_splitshaft
+model GenUnit_GENDCO_splitshaft  "Multidomain Turbine-Generator Unit with Split Torsional Shaft Model and GENDCO"
   inner OpenIPSL.Electrical.SystemBase SysData( S_b = 892400000, fn = 60);
   Machines.GENROU_multidomain_2flange
                                  generator(

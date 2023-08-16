@@ -1,8 +1,6 @@
 GenUnit
-GenUnit_linear
 GenUnit_withInterface
 GenUnit_noShaft
-GenUnit_linear_noShaft
 TradGen
 GenUnit_GENDCO
 GenUnit_splitshaft

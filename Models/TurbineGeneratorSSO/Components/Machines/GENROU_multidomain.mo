@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.Components.Machines;
-model GENROU_multidomain "ROUND ROTOR GENERATOR MODEL (QUADRATIC SATURATION)"
+model GENROU_multidomain "MULTIDOMAIN ROUND ROTOR GENERATOR MODEL (QUADRATIC SATURATION)"
   //Import of dependencies
   import Complex;
   import Modelica.ComplexMath.arg;

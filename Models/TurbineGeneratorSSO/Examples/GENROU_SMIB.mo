@@ -1,7 +1,7 @@
 within TurbineGeneratorSSO.Examples;
 model GENROU_SMIB
   "SMIB system to test functionality of generator model with round rotor and quadratic saturation"
-  extends OpenIPSL.Tests.BaseClasses.SMIB(SysData(S_b=892400000, fn=60));
+  extends OpenIPSL.Tests.BaseClasses.SMIB(SysData(S_b=100000000, fn=60));
   OpenIPSL.Electrical.Machines.PSSE.GENROU generator(
     Tpd0=5,
     Tppd0=0.07,

@@ -1,6 +1,6 @@
 within TurbineGeneratorSSO.Components.Interfaces;
 model T2PInterface
-  "Interface between OpenIPSL generators and detailed turbine models from other libraries"
+  "Interface to accept mechanical torque input from a shaft model and produce a mechanical power input for an OpenIPSL generator model"
   import Modelica.Constants.pi;
   outer OpenIPSL.Electrical.SystemBase SysData(S_b=960000000, fn=30) "Must add this line in all models";
   parameter Integer Np=2;
@@ -22,5 +22,9 @@ equation
     extent={{-100,100},{100,-100}},
     lineColor={28,108,200},
     fillColor={255,255,255},
-    fillPattern=FillPattern.Solid)}),                Diagram(coordinateSystem(preserveAspectRatio=false)));
+    fillPattern=FillPattern.Solid), Text(
+          extent={{-84,34},{82,-28}},
+          textColor={28,108,200},
+          textString="Torque-to-Power
+Interface")}),                                       Diagram(coordinateSystem(preserveAspectRatio=false)));
 end T2PInterface;

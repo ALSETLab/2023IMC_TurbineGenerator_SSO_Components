@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.Components.Machines;
-model GENROE_multidomain "ROUND ROTOR GENERATOR MODEL (EXPONENTIAL SATURATION)"
+model GENROE_multidomain "MULTIDOMAIN ROUND ROTOR GENERATOR MODEL (EXPONENTIAL SATURATION)"
  extends OpenIPSL.Icons.VerifiedModel;
  //Import of dependencies
  import Complex;

@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.Components.GenerationUnits;
-model GenUnit
+model GenUnit "Multidomain Turbine-Generator Unit with Torsional Shaft Model"
   inner OpenIPSL.Electrical.SystemBase SysData(S_b=960000000, fn=30);
   OpenIPSL.Types.Voltage Vb = 22000 "base voltage";
   Machines.GENROU_multidomain generator(
@@ -122,7 +122,7 @@ equation
           {84,-34},{79,-34}}, color={0,0,127}));
   connect(torque.flange, shaft.flange_a)
     annotation (Line(points={{10,0},{23.6,0}}, color={0,0,0}));
-  connect(shaft.flange_b, generator.flange_b)
+  connect(shaft.flange_b, generator.torque)
     annotation (Line(points={{44.4,0},{60,0}}, color={0,0,0}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
         coordinateSystem(preserveAspectRatio=false)),

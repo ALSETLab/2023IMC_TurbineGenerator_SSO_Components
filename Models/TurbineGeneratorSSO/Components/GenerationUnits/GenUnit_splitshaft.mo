@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.Components.GenerationUnits;
-model GenUnit_splitshaft
+model GenUnit_splitshaft  "Multidomain Turbine-Generator Unit with Split Torsional Shaft Model"
   inner OpenIPSL.Electrical.SystemBase SysData(S_b=100000, fn=60);
   OpenIPSL.Types.Voltage Vb = 22000 "base voltage";
   Machines.GENROU_multidomain_2flange

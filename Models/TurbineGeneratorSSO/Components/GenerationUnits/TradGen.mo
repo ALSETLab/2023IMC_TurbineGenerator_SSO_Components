@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.Components.GenerationUnits;
-model TradGen
+model TradGen  "Standard Single Domain Turbine-Generator Unit"
   inner OpenIPSL.Electrical.SystemBase SysData(S_b=960000000, fn=30);
   OpenIPSL.Electrical.Machines.PSSE.GENROU
                                  generator(

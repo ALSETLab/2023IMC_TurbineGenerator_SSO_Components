@@ -1,6 +1,6 @@
 within TurbineGeneratorSSO.Components.Machines;
 model GENDCO_2flange
-  "ROUND ROTOR GENERATOR MODEL WITH DC OFFSET TORQUE COMPONENT (QUADRATIC SATURATION)"
+  "2-FLANGE MULTIDOMAIN ROUND ROTOR GENERATOR MODEL WITH DC OFFSET TORQUE COMPONENT (QUADRATIC SATURATION)"
   //Import of dependencies
   import Complex;
   import Modelica.ComplexMath.arg;

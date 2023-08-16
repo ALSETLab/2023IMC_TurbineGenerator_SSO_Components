@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.Examples;
-model GENDCO_SMIB "SMIB - Single Machine Infinite Base system with one load."
+model GENDCO_SMIB "Single Machine Infinite Base system with one load to test GENDCO tubine-generator units."
   extends Modelica.Icons.Example;
   OpenIPSL.Electrical.Branches.PwLine pwLine(
     R=0.001,
@@ -46,7 +46,7 @@ model GENDCO_SMIB "SMIB - Single Machine Infinite Base system with one load."
         origin={40,-60})));
   OpenIPSL.Electrical.Buses.Bus GEN1
     annotation (Placement(transformation(extent={{-40,-10},{-20,10}})));
-  inner OpenIPSL.Electrical.SystemBase SysData(S_b=892400000, fn=60)
+  inner OpenIPSL.Electrical.SystemBase SysData(S_b=100000000, fn=60)
     annotation (Placement(transformation(extent={{-100,80},{-60,100}})));
   OpenIPSL.Electrical.Buses.Bus LOAD(v_0=constantLoad.v_0, angle_0=constantLoad.angle_0)
     annotation (Placement(transformation(extent={{-10,-10},{10,10}})));

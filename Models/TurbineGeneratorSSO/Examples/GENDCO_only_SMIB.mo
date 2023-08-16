@@ -1,30 +1,7 @@
 within TurbineGeneratorSSO.Examples;
 model GENDCO_only_SMIB
-  "SMIB system to test functionality of generator model with round rotor and quadratic saturation"
-  extends OpenIPSL.Tests.BaseClasses.SMIB(SysData(S_b=892400000, fn=60));
-  Components.Machines.GENDCO_standardbase  generator(
-    Tpd0=5,
-    Tppd0=0.07,
-    Tpq0=0.9,
-    Tppq0=0.09,
-    D=0,
-    Xd=1.84,
-    Xq=1.75,
-    Xpd=0.41,
-    Xpq=0.6,
-    Xppd=0.2,
-    Xl=0.12,
-    S10=0.11,
-    S12=0.39,
-    angle_0=0.070492225331847,
-    Xppq=0.2,
-    R_a=0,
-    Xpp=0.2,
-    H = 2.8301254,
-    M_b=100000000,
-    P_0=40000000,
-    Q_0=5416582,
-    v_0=1) annotation (Placement(transformation(extent={{-86,-20},{-46,20}})));
+  "SMIB system to test functionality of GENDCO generator model"
+  extends OpenIPSL.Tests.BaseClasses.SMIB(SysData(S_b=100000000, fn=60));
     //H=4.28,
 equation
   connect(generator.PMECH, generator.PMECH0) annotation (Line(points={{-90,12},

@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.Components.Shafts;
-model Shaft_Scalable_v2_heqk "Scalable torsional shaft model."
+model Shaft_Scalable_v2_heqk "Scalable torsional shaft model (for use when # of inertias is equal to # of spring constants)."
   extends TurbineGeneratorSSO.BaseModels.Shafts.baseShaft;
 
   import SIunits = Modelica.Units.SI;

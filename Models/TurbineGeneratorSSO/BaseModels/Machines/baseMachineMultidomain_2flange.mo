@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.BaseModels.Machines;
-partial model baseMachineMultidomain_2flange
+partial model baseMachineMultidomain_2flange  "Base model for multidomain machines to accept a shaft torque input and connect another section of shaft"
   import Complex;
   import Modelica.ComplexMath.arg;
   import Modelica.ComplexMath.real;

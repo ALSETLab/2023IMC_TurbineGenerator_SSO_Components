@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.Components.GenerationUnits;
-model GenUnit_GENDCO
+model GenUnit_GENDCO  "Multidomain Turbine-Generator Unit with Torsional Shaft Model and GENDCO"
   inner OpenIPSL.Electrical.SystemBase SysData( S_b = 960000000, fn = 30);
   Machines.GENDCO                generator(
     V_b=400000,
@@ -81,7 +81,7 @@ equation
           -5},{86,-14},{52,-14},{52,-6},{58,-6}}, color={0,0,127}));
   connect(torque.flange, shaft.flange_a)
     annotation (Line(points={{10,0},{23.6,0}}, color={0,0,0}));
-  connect(shaft.flange_b, generator.flange_b)
+  connect(shaft.flange_b, generator.torque)
     annotation (Line(points={{44.4,0},{60,0}}, color={0,0,0}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
         coordinateSystem(preserveAspectRatio=false)),

@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.Examples;
-model SMIB_SSR_FBM "SMIB - Single Machine Infinite Base system with one load."
+model SMIB_SSR_FBM "Modified implementation of IEEE First Benchmark Model to assess GENDCO turbine-generator unit."
   extends Modelica.Icons.Example;
   OpenIPSL.Electrical.Branches.PwLine pwLine(
     R=0,
@@ -36,8 +36,8 @@ model SMIB_SSR_FBM "SMIB - Single Machine Infinite Base system with one load."
     Q_0=10000000,
     v_0=0.9919935) annotation (Placement(transformation(extent={{-10,-72},{10,-52}})));
   OpenIPSL.Electrical.Events.PwFault pwFault(
-    t1=1000,
-    t2=1000.15,
+    t1=2,
+    t2=2.15,
     R=Modelica.Constants.eps,
     X=Modelica.Constants.eps)
          annotation (Placement(transformation(
@@ -46,7 +46,7 @@ model SMIB_SSR_FBM "SMIB - Single Machine Infinite Base system with one load."
         origin={60,-30})));
   OpenIPSL.Electrical.Buses.Bus GEN1
     annotation (Placement(transformation(extent={{-40,-10},{-20,10}})));
-  inner OpenIPSL.Electrical.SystemBase SysData(S_b=892400000, fn=60)
+  inner OpenIPSL.Electrical.SystemBase SysData(S_b=100000000, fn=60)
     annotation (Placement(transformation(extent={{-100,80},{-60,100}})));
   OpenIPSL.Electrical.Buses.Bus LOAD(v_0=constantLoad.v_0, angle_0=constantLoad.angle_0)
     annotation (Placement(transformation(extent={{-10,-10},{10,10}})));
@@ -56,22 +56,23 @@ model SMIB_SSR_FBM "SMIB - Single Machine Infinite Base system with one load."
     annotation (Placement(transformation(extent={{50,-10},{70,10}})));
   Components.GenerationUnits.GenUnit_GENDCO_splitshaft
                                      generatorUnit(
-    M_b=500000,
-    Tppd0=0.07,
-    Tppq0=0.09,
-    H=2.8301254,
+    M_b=892400000,
+    Tpd0=4.3,
+    Tppd0=0.032,
+    Tppq0=0.05,
+    H=0.868495,
     D=0,
-    Xd=1.84,
-    Xq=1.75,
-    Xpd=0.41,
-    Xppd=0.2,
+    Xd=1.79,
+    Xq=1.71,
+    Xpd=0.169,
+    Xppd=0.135,
     Xppq=0.2,
-    Xl=0.12,
+    Xl=0.13,
     S10=0.11,
     S12=0.39,
     R_a=0,
-    Xpq=0.6,
-    Tpq0=0.9,
+    Xpq=0.228,
+    Tpq0=0.85,
     Xpp=0.2,
     angle_0=0.070492225331847)
     annotation (Placement(transformation(extent={{-80,-10},{-60,10}})));

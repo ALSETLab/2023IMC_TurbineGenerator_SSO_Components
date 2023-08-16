@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.Examples;
-model IEEE_SSR_FBM
+model IEEE_SSR_FBM "Preliminary implementation of the IEEE First Benchmark Model for the Computer Simulation of Subsynchronous Resonance."
   extends Modelica.Icons.Example;
   inner OpenIPSL.Electrical.SystemBase SysData(S_b=500000, fn=60) "Must add this line in all models";
 

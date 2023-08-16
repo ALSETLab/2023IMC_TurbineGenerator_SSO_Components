@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.Components.GenerationUnits;
-model GenUnit_withInterface
+model GenUnit_withInterface "Turbine-Generator Unit with Torsional Shaft Model using Torque-to-Power Interface"
   inner OpenIPSL.Electrical.SystemBase SysData(S_b=960000000, fn=30);
   OpenIPSL.Types.Voltage Vb = 22000 "bus voltage";
   OpenIPSL.Electrical.Machines.PSSE.GENROU

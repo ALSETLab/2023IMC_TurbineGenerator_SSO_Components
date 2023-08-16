@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.BaseModels.Machines;
-partial model baseMachineMultidomain
+partial model baseMachineMultidomain  "Base model for multidomain machines to accept a shaft torque input"
   import Complex;
   import Modelica.ComplexMath.arg;
   import Modelica.ComplexMath.real;
@@ -88,7 +88,7 @@ partial model baseMachineMultidomain
         extent={{-10,-10},{10,10}},
         origin={110,-90})));
 
-  Modelica.Mechanics.Rotational.Interfaces.Flange_b flange_b
+  Modelica.Mechanics.Rotational.Interfaces.Flange_b torque
     annotation (Placement(transformation(extent={{-110,-10},{-90,10}})));
 
   OpenIPSL.Types.PerUnit w(start=w0,
@@ -146,8 +146,8 @@ equation
   //adding mechcanical interface
   SPEED_MECH = w_b * (1 + SPEED)*2/pole_no;//mechanical speed (rad/s)
   //SPEED_MECH = der(flange_b.phi);
-  flange_b.phi = delta*pole_no/2; // (deg)
-  (SPEED_MECH*flange_b.tau/(M_b))*(pole_no/2) = PMECH; // (pu)
+  torque.phi = delta*pole_no/2;   // (deg)
+  (SPEED_MECH*torque.tau/(M_b))*(pole_no/2) = PMECH;   // (pu)
 
   //Interfacing outputs with the internal variables
   ANGLE = delta;

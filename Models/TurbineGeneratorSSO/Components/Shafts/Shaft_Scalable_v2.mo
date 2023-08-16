@@ -1,5 +1,5 @@
 within TurbineGeneratorSSO.Components.Shafts;
-model Shaft_Scalable_v2 "Scalable torsional shaft model."
+model Shaft_Scalable_v2 "Scalable torsional shaft model"
   extends TurbineGeneratorSSO.BaseModels.Shafts.baseShaft;
 
   import SIunits = Modelica.Units.SI;
