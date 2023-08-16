@@ -6,4 +6,4 @@
  These models include a scalable torsional shaft model (SHAF25), a round-rotor generator model with a DC offset torque component (GENDCO), and a Single Machine Infinite Bus (SMIB) test system to perform preliminary evaluation of these models.
  
 # Dependencies
-  The models presented in this repostiory are dependent on the [OpenIPSL Library v3.0.0](https://github.com/OpenIPSL/OpenIPSL/releases/tag/v3.0.0).
+  The models presented in this repostiory are dependent on the [OpenIPSL Library v3.0.1](https://github.com/OpenIPSL/OpenIPSL/releases/tag/v3.0.1).
